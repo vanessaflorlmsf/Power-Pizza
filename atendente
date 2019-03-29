@@ -1,0 +1,38 @@
+
+
+public class Atendente {
+	
+	public static void main(String args[]){
+		
+		Pizza pizza1 = new Pizza();
+		Pizza pizza2 = new Pizza();
+		Pizza pizza3 = new Pizza();
+		
+		pizza1.adicionarIngrediente("Calabresa");
+		pizza1.adicionarIngrediente("queijo");
+		pizza1.adicionarIngrediente("abacaxi");
+		
+		pizza2.adicionarIngrediente("banana");
+		pizza2.adicionarIngrediente("banana");
+		pizza2.adicionarIngrediente("banana");
+		
+		pizza3.adicionarIngrediente("Carne");
+		pizza3.adicionarIngrediente("ovo");
+		pizza3.adicionarIngrediente("camarao");
+		
+		Carrinho carrinho = new Carrinho();
+		
+		
+		
+		
+		carrinho.addPizza(pizza1);
+		carrinho.addPizza(pizza2);
+		carrinho.addPizza(pizza3);
+		
+		System.out.println("Total de pizzas no carrinho: " +carrinho.totalPizza());
+		System.out.println("Valor total da compra: " + carrinho.getPrecoTotal());
+	
+		System.out.println("Lista de ingredientes utilizados: \n" +Pizza.getListaIngredientes());
+	}
+}
+
